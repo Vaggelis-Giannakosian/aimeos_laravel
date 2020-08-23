@@ -1,0 +1,22 @@
+{
+	"projectName": "aimeos",
+	"licenseText": "proprietary",
+	"pkgs": [{
+		"name": "aimeos CSS",
+		"file": "aimeos.css",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.css",
+			"path": "themes/"
+		}]
+	}, {
+		"name": "aimeos JS",
+		"file": "aimeos.js",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.js",
+			"path": "themes/"
+		}]
+	}],
+	"resources" : []
+}

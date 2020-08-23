@@ -14,7 +14,7 @@ return [
 		 'jsonadm' => ['prefix' => 'admin/{site}/jsonadm', 'middleware' => ['web', 'auth']],
 		 'jsonapi' => ['prefix' => 'jsonapi', 'middleware' => ['web', 'api']],
 		 'account' => ['prefix' => 'profile', 'middleware' => ['web', 'auth']],
-		 'default' => ['prefix' => 'shop', 'middleware' => ['web']],
+		 'default' => ['prefix' => '{locale}/buy', 'middleware' => ['web']],
 //		 'update' => [],
 	],
 
@@ -67,7 +67,7 @@ return [
 			],
 			'common' => [
 				'template' => [
-					// 'baseurl' => public_path( 'packages/aimeos/shop/themes/elegance' ),
+					 'baseurl' => public_path( 'packages/aimeos/shop/themes/elegance' ),
 				],
 			],
 		],
@@ -97,7 +97,16 @@ return [
 	'mshop' => [
 	    "price" => [
 	        "taxflag" => false
-        ]
+        ],
+//        "service" => [
+//            "provider" => [
+//                "delivery" => [
+//                    "decorators" => [
+//                        'test'
+//                    ]
+//                ]
+//            ]
+//        ],
 	],
 
 
